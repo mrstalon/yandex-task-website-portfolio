@@ -1,0 +1,1309 @@
+
+
+body {
+    width: 100%;
+    margin: 0;
+
+    header {
+        width: 100%;
+        background-color: #082841;
+    }
+
+    footer {
+        width: 100%;
+        background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+    }
+
+    .header-container {
+        background-color: #082841;
+        color: white;
+        width: 336px;
+        height: 648px;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 15px 305px 16px;
+        grid-template-rows: 33px 114px 21px 144px 30px 264px 42px;
+        grid-template-areas:
+                ". . ."
+                ". tc ."
+                ". . ."
+                ". ph ."
+                ". . ."
+                ". ic ."
+                ". . .";
+
+        .my-photo {
+            background: url('../assets/avatar.jpg') no-repeat center center;
+            background-size: cover;
+            width: 144px;
+            height: 144px;
+            grid-area: ph;
+            margin: 0 auto;
+            border-radius: 72px;
+        }
+
+        .title-container {
+            font-family: Helvetica;
+            grid-area: tc;
+
+            h1 {
+                font-size: 32px;
+                color: #FFFFFF;
+                line-height: 40px;
+                margin: 0 auto;
+                margin-top: 15px;
+                width: 122px;
+                text-align: center;
+            }
+            h2 {
+                margin: 0 auto;
+                font-size: 16px;
+                color: #FFFFFF;
+                height: 19px;
+                width: 192px;
+            }
+        }
+
+        .info-container {
+            grid-area: ic;
+            p {
+                font-family: Georgia;
+                font-size: 16px;
+                color: #FFFFFF;
+                line-height: 24px;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+
+    .main-container {
+        width: 336px;
+        height: 2330px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 16px 304px 16px;
+        grid-template-rows: 91px 40px 13px 336px 83px 40px 38px 1615px;
+        grid-template-areas: 
+                ". . ."
+                ". ex-t ."
+                ". . ."
+                ". ex-c ."
+                ". . ."
+                ". w-t ."
+                ". . ."
+                ". my-works ."
+                ". . .";
+
+
+        .points-container:hover {
+            cursor: pointer;
+        }        
+
+        .expection-title {
+            grid-area: ex-t;
+            font-family: Helvetica;
+            font-size: 32px;
+            color: #000000;
+            line-height: 40px;
+            margin: 0;
+            width: 297px
+        }
+
+        .my-works-title {
+            grid-area: w-t;
+            margin: 0;
+            font-family: Helvetica;
+            font-size: 32px;
+            color: #000000;
+            line-height: 40px;
+        }
+
+        .expection-container {
+            grid-area: ex-c;
+            display: grid;
+            grid-template-columns: 304px;
+            grid-template-rows: 304px 24px 8px;
+            grid-template-areas:
+                    "f"
+                    "."
+                    "p";
+            
+
+            .experience-container {
+                background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+                border-radius: 4px;
+                grid-area: f;
+
+                h1 {
+                    margin: 0;
+                    font-family: Helvetica;
+                    font-size: 24px;
+                    color: #000000;
+                    margin-top: 25px;
+                    margin-left: 24px;
+                }
+
+                p {
+                    font-family: Georgia;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 24px;
+                    width: 256px;
+                    height: 98px;
+                    margin-top: 44px;
+                    margin-left: 24px;
+                }
+            }
+
+            .friends-container {
+                background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+                border-radius: 4px;
+                grid-area: s;
+                display: none;
+
+                h1 {
+                    margin: 0;
+                    font-family: Helvetica;
+                    font-size: 24px;
+                    color: #000000;
+                    margin-top: 25px;
+                    margin-left: 24px;
+                }
+
+                p {
+                    font-family: Georgia;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 24px;
+                    width: 256px;
+                    height: 98px;
+                    margin-top: 24px;
+                    margin-left: 24px;
+                }
+            }
+
+            .job-container {
+                background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+                border-radius: 4px;
+                grid-area: t;
+                display: none;
+
+                h1 {
+                    margin: 0;
+                    font-family: Helvetica;
+                    font-size: 24px;
+                    color: #000000;
+                    margin-top: 25px;
+                    margin-left: 24px;
+                }
+
+                p {
+                    font-family: Georgia;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 24px;
+                    width: 256px;
+                    height: 98px;
+                    margin-top: 24px;
+                    margin-left: 24px;
+                }
+            }
+            
+            .knowledges-contaier {
+                background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+                border-radius: 4px;
+                grid-area: ff;
+                display: none;
+
+                h1 {
+                    margin: 0;
+                    font-family: Helvetica;
+                    font-size: 24px;
+                    color: #000000;
+                    margin-top: 25px;
+                    margin-left: 24px;
+                }
+
+                p {
+                    font-family: Georgia;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 24px;
+                    width: 256px;
+                    height: 98px;
+                    margin-top: 24px;
+                    margin-left: 24px;
+                }
+            }
+
+            .points-container {
+                grid-area: p;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 88px;
+                margin: 0 auto;
+
+                :first-child {
+                    background-color: #000000;
+                }
+
+                div {
+                    width: 8px;
+                    height: 8px;
+                    background-color: #DD3E18;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .my-works-container {
+            margin-top: 38px;
+            display: grid;
+            grid-area: my-works;
+            grid-template-columns: 304px;
+            grid-template-rows: 475px 64px 475px 64px 475px;
+            grid-template-areas: 
+                    "f"
+                    "."
+                    "s"
+                    "."
+                    "t"
+                    ".";
+
+            .first-work-container {
+                grid-area: f;
+                display: grid;
+                height: 487px;
+                grid-template-columns: 304px;
+                grid-template-rows: 77px 147px 15px 216px 24px 8px;
+                grid-template-areas: 
+                        "title"
+                        "text"
+                        "."
+                        "img"
+                        "."
+                        "points";
+
+
+                .work-title {
+                    grid-area: title;
+
+                    h1 {
+                        margin: 0;
+                        font-family: Helvetica;
+                        font-size: 24px;
+                        color: #000000;
+                    }
+
+                    a {
+                        font-family: Georgia;
+                        font-size: 16px;
+                        color: #DD3E18;
+                        line-height: 24px;
+                        text-decoration: none;
+                        margin-top: 8px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    grid-area: text;
+                    opacity: 0.8;
+                    font-family: Georgia;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 24px;
+                }
+
+                .first-work-image {
+                    grid-area: img;
+                    background: url('../assets/pic1.png') no-repeat center center;
+                    background-size: cover;
+                    width: 304px;
+                }
+
+                .points-container {
+                    grid-area: points;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 88px;
+                    margin: 0 auto;
+                                        
+                    :first-child {
+                        background-color: #000000;
+                    }
+    
+                    div {
+                        width: 8px;
+                        height: 8px;
+                        background-color: #DD3E18;
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .second-work-container {
+                display: grid;
+                grid-area: s;
+                height: 487px;
+                grid-template-columns: 304px;
+                grid-template-rows: 77px 147px 15px 216px 24px 8px;
+                grid-template-areas: 
+                        "title"
+                        "text"
+                        "."
+                        "img"
+                        "."
+                        "points";
+
+
+                .work-title {
+                    grid-area: title;
+
+                    h1 {
+                        margin: 0;
+                        font-family: Helvetica;
+                        font-size: 24px;
+                        color: #000000;
+                    }
+
+                    a {
+                        font-family: Georgia;
+                        font-size: 16px;
+                        color: #DD3E18;
+                        line-height: 24px;
+                        text-decoration: none;
+                        margin-top: 8px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    grid-area: text;
+                    opacity: 0.8;
+                    font-family: Georgia;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 24px;
+                }
+
+                .second-work-image {
+                    grid-area: img;
+                    background: url('../assets/pic2.jpg') no-repeat center center;
+                    background-size: cover;
+                    width: 304px;
+                }
+
+                .points-container {
+                    grid-area: points;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 88px;
+                    margin: 0 auto;
+                                        
+                    :first-child {
+                        background-color: #000000;
+                    }
+    
+                    div {
+                        width: 8px;
+                        height: 8px;
+                        background-color: #DD3E18;
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .third-work-container {
+                display: grid;
+                grid-area: t;
+                height: 487px;
+                grid-template-columns: 304px;
+                grid-template-rows: 77px 147px 15px 216px 24px 8px;
+                grid-template-areas: 
+                        "title"
+                        "text"
+                        "."
+                        "img"
+                        "."
+                        "points";
+
+
+                .work-title {
+                    grid-area: title;
+
+                    h1 {
+                        margin: 0;
+                        margin: 0;
+                        font-family: Helvetica;
+                        font-size: 24px;
+                        color: #000000;
+                    }
+
+                    a {
+                        font-family: Georgia;
+                        font-size: 16px;
+                        color: #DD3E18;
+                        line-height: 24px;
+                        text-decoration: none;
+                        margin-top: 8px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    grid-area: text;
+                    opacity: 0.8;
+                    font-family: Georgia;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 24px;
+                }
+
+                .third-work-image {
+                    grid-area: img;
+                    background: url('../assets/pic3.png') no-repeat center center;
+                    background-size: cover;
+                    width: 304px;
+                }
+
+                .points-container {
+                    grid-area: points;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 88px;
+                    margin: 0 auto;
+
+                    :first-child {
+                        background-color: #000000;
+                    }
+    
+                    div {
+                        width: 8px;
+                        height: 8px;
+                        background-color: #DD3E18;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-container {
+        width: 336px;
+        height: 960px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 16px 304px 16px;
+        grid-template-rows: 43px 80px 15px 262px 32px 456px;
+        grid-template-areas: 
+                ". . ."
+                ". title ."
+                ". . ."
+                ". cont-c ."
+                ". . ."
+                ". form .";
+
+        h1 {
+            grid-area: title;
+            font-family: Helvetica;
+            font-size: 32px;
+            color: #000000;
+            line-height: 40px;
+            width: 210px;
+            margin: 0px;
+        }
+
+        .contact-container {
+            grid-area: cont-c;
+
+            h2 {
+                display: none;    
+            } 
+
+            .checkbox-container {
+                display: flex;
+                flex-direction: column;
+                height: 122px;
+
+                :first-child {
+
+                    div {
+                        background: url('../assets/facebook-icon.svg') no-repeat center center;
+                        background-size: cover;
+                    }
+
+                }
+
+                :nth-child(2) {
+                    div {
+                        background: url('../assets/vk-icon.svg') no-repeat center center;
+                        background-size: cover;
+                    }
+                }
+
+                :nth-child(3) {
+                    div {
+                        background: url('../assets/git-icon.svg') no-repeat center center;
+                        background-size: cover;
+                    }
+                }
+
+                :last-child {
+                    div {
+                        background: url('../assets/inst-icon.svg') no-repeat center center;
+                        background-size: cover; 
+                    }
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 130px;
+                    height: 35px;
+
+                    div {
+                        border-radius: 2px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    a {
+                        font-family: Georgia;
+                        font-size: 16px;
+                        color: #DD3E18;
+                        line-height: 32px;
+                        margin: 0;
+                        margin-left: 12px;
+                    }
+                }
+            }
+
+            .contact-info-container {
+                p {
+                    font-family: Georgia;
+                    font-size: 16px;
+                    color: #000000;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        form {
+            grid-area: form;
+            .name-input {
+                padding-left: 16px;
+                background: #FFFFFF;
+                border-radius: 4px;
+                width: 288px;
+                height: 48px;
+                font-family: Georgia;
+                font-size: 16px;
+                color: #000000;
+                line-height: 24px;
+                border: 0;
+            }
+
+            .email-input {
+                padding-left: 16px;
+                background: #FFFFFF;
+                border: 1px solid rgba(0,0,0,0.10);
+                border-radius: 4px;
+                width: 287px;
+                height: 48px;
+                font-family: Georgia;
+                font-size: 16px;
+                color: #000000;
+                line-height: 24px;
+                margin-top: 24px;
+            }
+
+            .message-area {
+                padding-top: 10px;
+                padding-left: 16px;
+                background: #FFFFFF;
+                border-radius: 4px;
+                width: 288px;
+                height: 192px;
+                font-family: Georgia;
+                font-size: 16px;
+                color: #000000;
+                line-height: 24px;
+                border: 0;
+                resize: none;
+                margin-top: 24px;
+            }
+
+            .affix-doc-contaier {
+                width: 149px;
+                height: 24px;
+                margin-top: 16px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                div {
+                    background: url('../assets/attach-icon.svg') no-repeat center center;
+                    background-size: cover;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                div:hover {
+                    cursor: pointer;
+                }
+
+                h3 {
+                    margin: 0;
+                    font-family: Helvetica;
+                    font-size: 16px;
+                    color: #DD3E18;
+                    line-height: 24px;
+                    margin-left: 5px;
+                }
+
+                h3:hover {
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                background: #DD3E18;
+                border-radius: 4px;
+                width: 304px;
+                height: 49px;
+                font-family: Helvetica;
+                font-size: 16px;
+                color: #FFFFFF;
+                line-height: 24px;
+                margin-top: 31px;
+                border: 0;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .header-container {
+            width: 768px;
+            height: 1024px;
+            grid-template-columns: 112px 544px 112px;
+            grid-template-rows: 97px 88px 39px 384px 75px 196px 145px;
+            grid-template-areas:
+                    ". . ."
+                    ". tc ."
+                    ". . ."
+                    ". ph ."
+                    ". . ."
+                    ". ic ."
+                    ". . .";
+
+            
+            .my-photo {
+                width: 384px;
+                height: 384px;
+                grid-area: ph;
+                border-radius: 192px;
+            }
+    
+            .title-container {
+                grid-area: tc;
+    
+                h1 {
+                    font-size: 40px;
+                    line-height: 40px;
+                    margin-top: 0px;
+                    width: 464px;
+                }
+                h2 {
+                    height: 48px;
+                    width: 288px;
+                    font-size: 24px;
+                }
+            }
+    
+            .info-container {
+                grid-area: ic;
+                width: 544px;
+                height: 196px;
+                p {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .main-container {
+            width: 768px;
+            height: 3100px;
+            grid-template-columns: 32px 704px 32px;
+            grid-template-rows: 82px 48px 38px 448px 105px 48px 64px 2177px 88px;
+    
+    
+            .expection-title {
+                font-size: 40px;
+                width: 371px;
+                height: 48px;
+            }
+    
+            .my-works-title {
+                font-size: 40px;
+            }
+    
+            .expection-container {
+                grid-gap: 20px;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas:
+                    "ex-it-1 ex-it-1 ex-it-1 ex-it-1 ex-it-2 ex-it-2 ex-it-2"
+                    "ex-it-3 ex-it-3 ex-it-3 ex-it-4 ex-it-4 ex-it-4 ex-it-4";
+                
+    
+                .experience-container {
+                    grid-area: ex-it-1;
+    
+                    h1 {
+                        margin-top: 25px;
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        width: 328px;
+                        height: 98px;
+                        margin-top: 24px;
+                        margin-left: 24px;
+                    }
+                }
+    
+                .friends-container {
+                    border-radius: 4px;
+                    grid-area: ex-it-2;
+                    display: block;
+
+                    h1 {
+                        margin-top: 25px;
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        width: 248px;
+                        height: 80px;
+                        margin-top: 24px;
+                        margin-left: 24px;
+                        margin-bottom: 0px;
+                    }
+                }
+    
+                .job-container {
+                    border-radius: 4px;
+                    grid-area: ex-it-3;
+                    display: block;
+
+                    h1 {
+                        margin-top: 25px;
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        width: 248px;
+                        height: 80px;
+                        margin-top: 24px;
+                        margin-left: 24px;
+                    }
+                }
+                
+                .knowledges-contaier {
+                    border-radius: 4px;
+                    grid-area: ex-it-4;
+                    display: block;
+
+                    h1 {
+                        margin-top: 25px;
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        width: 328px;
+                        height: 98px;
+                        margin-top: 24px;
+                        margin-left: 24px;
+                    }
+                }
+    
+                .points-container {
+                    display: none;
+                }
+            }
+    
+            .my-works-container {
+                margin-top: 0px;
+                display: grid;
+                grid-area: my-works;
+                grid-template-columns: 704px;
+                grid-template-rows: 679px 70px 679px 70px 88px;
+                grid-template-areas: 
+                        "f"
+                        "."
+                        "s"
+                        "."
+                        "t"
+                        ".";
+    
+                .first-work-container {
+                    grid-area: f;
+                    height: 680px;
+                    grid-template-columns: 320px 384px;
+                    grid-template-rows: 147px 496px 24px 8px;
+                    grid-template-areas: 
+                            "title text"
+                            "img img"
+                            ". . "
+                            "points points";
+    
+                    .first-work-image {
+                        width: 704px;
+                    }
+                }
+    
+                .second-work-container {
+                    height: 680px;
+                    grid-template-columns: 320px 384px;
+                    grid-template-rows: 147px 496px 24px 8px;
+                    grid-template-areas: 
+                            "title text"
+                            "img img"
+                            ". . "
+                            "points points";
+    
+                    .second-work-image {
+                        width: 704px;
+                    }
+                }
+    
+                .third-work-container {
+                    height: 680px;
+                    grid-template-columns: 320px 384px;
+                    grid-template-rows: 147px 496px 24px 8px;
+                    grid-template-areas: 
+                            "title text"
+                            "img img"
+                            ". . "
+                            "points points";
+    
+                    .third-work-image {
+                        width: 704px;
+                    }
+                }
+            }
+        }
+
+        .footer-container {
+            width: 768px;
+            height: 790px;
+            grid-template-columns: 32px 704px 32px;
+            grid-template-rows: 33px 48px 21px 147px 19px 457px;
+            grid-template-areas: 
+                    ". . ."
+                    ". title ."
+                    ". . ."
+                    ". cont-c ."
+                    ". . ."
+                    ". form .";
+    
+            h1 {
+                grid-area: title;
+                font-size: 40px;
+                width: 503px;
+            }
+    
+            .contact-container {
+                grid-area: cont-c;
+                display: grid;
+                grid-template-columns: 384px 96px 176px;
+                grid-template-rows: 147px;
+                grid-template-areas: 
+                        "i-c . c-c";
+    
+                h2 {
+                    display: none;    
+                }    
+
+                .checkbox-container {
+                    grid-area: c-c;
+                    height: 122px;
+    
+                    div {
+                        align-items: center;
+                        width: 130px;
+                        height: 35px;
+                    }
+                }
+    
+            }
+    
+            form {
+                grid-area: form;
+                .name-input {
+                    width: 688px;
+                }
+    
+                .email-input {
+                    width: 687px;
+                }
+    
+                .message-area {
+                    width: 688px;
+                }
+    
+                button {
+                    width: 704px;
+                }
+
+            }
+        }
+        
+    }
+
+    @media (min-width: 1024px) {
+        .header-container {
+            width: 1024px;
+            height: 768px;
+            grid-template-columns: 424px 95px 464px 41px;
+            grid-template-rows: 65px 88px 266px 252px 97px;
+            grid-template-areas:
+                    "ph . . ."
+                    "ph . tc ."
+                    "ph . . ."
+                    "ph . ic ."
+                    "ph . . .";
+    
+            .my-photo {
+                width: 424px;
+                height: 768px;
+                border-radius: 0;
+            }
+    
+            .title-container {
+    
+                h1 {
+                    font-size: 40px;
+                    line-height: 40px;
+                    margin-top: 11px;
+                    width: 464px;
+                    height: 41px;
+                    text-align: left;
+                }
+                h2 {
+                    font-size: 24px;
+                    height: 29px;
+                    width: 288px;
+                    margin-left: 0px;
+                }
+            }
+    
+            .info-container {
+                width: 464px;
+                height: 252px;
+
+                p {
+                    font-size: 20px;
+                    line-height: 28px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .main-container {
+            width: 1024px;
+            height: 2425px;
+            grid-template-columns: 40px 944px 40px;
+            grid-template-rows: 82px 48px 38px 448px 129px 48px 63px 1441px 143px;
+    
+    
+            .expection-title {
+                font-size: 40px;
+                width: 371px;
+                height: 48px;
+            }
+    
+            .my-works-title {
+                font-size: 40px;
+            }
+    
+            .expection-container {            
+    
+                .experience-container {
+                    grid-area: ex-it-1;
+    
+                    h1 {
+                        margin-top: 25px;
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        width: 328px;
+                        height: 98px;
+                        margin-top: 24px;
+                        margin-left: 24px;
+                    }
+                }
+    
+                .friends-container {
+                    border-radius: 4px;
+                    grid-area: ex-it-2;
+
+                    h1 {
+                        margin-top: 25px;
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        width: 248px;
+                        height: 80px;
+                        margin-top: 24px;
+                        margin-left: 24px;
+                        margin-bottom: 0px;
+                    }
+                }
+    
+                .job-container {
+                    border-radius: 4px;
+                    grid-area: ex-it-3;
+
+                    h1 {
+                        margin-top: 25px;
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        width: 248px;
+                        height: 80px;
+                        margin-top: 24px;
+                        margin-left: 24px;
+                    }
+                }
+                
+                .knowledges-contaier {
+                    border-radius: 4px;
+                    grid-area: ex-it-4;
+
+                    h1 {
+                        margin-top: 25px;
+                        margin-left: 24px;
+                    }
+    
+                    p {
+                        width: 328px;
+                        height: 98px;
+                        margin-top: 24px;
+                        margin-left: 24px;
+                    }
+                }
+    
+                .points-container {
+                    display: none;
+                }
+            }
+    
+            .my-works-container {
+                display: grid;
+                grid-area: my-works;
+                grid-template-columns: 704px;
+                grid-template-rows: 384px 144px 384px 145px 384px 143px;
+                grid-template-areas: 
+                        "f"
+                        "."
+                        "s"
+                        "."
+                        "t"
+                        ".";
+    
+                .first-work-container {
+                    grid-area: f;
+                    height: 384px;
+                    grid-template-columns: 544px 16px 8px 72px 304px 40px;
+                    grid-template-rows: 61px 103px 56px 25px 139px;
+                    grid-template-areas: 
+                            "img . . . title ."
+                            "img . . . . ."
+                            "img . points . . ."
+                            "img . . . . ."
+                            "img . . . text .";
+    
+                    .first-work-image {
+                        width: 544px;
+                        height: 384px;
+                    }
+
+                    .points-container {
+                        flex-direction: column;
+                    }
+                }
+    
+                .second-work-container {
+                    height: 384px;
+                    grid-template-columns: 40px 304px 72px 8px 16px 544px;
+                    grid-template-rows: 61px 103px 56px 25px 139px;
+                    grid-template-areas: 
+                            ". title . . . img"
+                            ". . . . . img"
+                            ". . . points . img"
+                            ". . . . . img"
+                            ". text . . . img"; 
+
+       
+    
+                    .second-work-image {
+                        width: 544px;
+                        height: 384px;
+                    }
+
+                    .points-container {
+                        flex-direction: column;
+                    }
+                }
+    
+                .third-work-container {
+                    height: 384px;
+                    grid-template-columns: 544px 16px 8px 72px 304px 40px;
+                    grid-template-rows: 61px 103px 56px 25px 139px;
+                    grid-template-areas: 
+                            "img . . . title ."
+                            "img . . . . ."
+                            "img . points . . ."
+                            "img . . . . ."
+                            "img . . . text .";
+    
+                    .third-work-image {
+                        width: 544px;
+                        height: 384px;
+                    }
+
+                    .points-container {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+
+        .footer-container {
+            width: 1024px;
+            height: 700px;
+            grid-template-columns: 39px 304px 96px 544px 40px;
+            grid-template-rows: 81px 48px 61px 457px;
+            grid-template-areas: 
+                    ". . . . ."
+                    ". title title title ."
+                    ". . . . ."
+                    ". cont-c . form .";
+    
+            h1 {
+                grid-area: title;
+                font-size: 40px;
+                width: 503px;
+            }
+    
+            .contact-container {
+                grid-area: cont-c;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+    
+                .checkbox-container {
+                    grid-area: c-c;
+                    height: 122px;
+    
+                    div {
+                        align-items: center;
+                        width: 130px;
+                        height: 35px;
+                    }
+                }
+    
+            }
+    
+            form {
+                grid-area: form;
+                .name-input {
+                    width: 528px;
+                }
+    
+                .email-input {
+                    width: 527px;
+                }
+    
+                .message-area {
+                    width: 528px;
+                }
+    
+                button {
+                    width: 544px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .header-container {
+            width: 1440px;
+            height: 672px;
+            grid-template-columns: 552px 96px 544px 248px;
+            grid-template-rows: 65px 88px 234px 196px 89px;
+            grid-template-areas:
+                    "ph . . ."
+                    "ph . tc ."
+                    "ph . . ."
+                    "ph . ic ."
+                    "ph . . .";
+    
+            .my-photo {
+                width: 552px;
+                height: 672px;
+            }
+    
+            .title-container {
+    
+                h1 {
+                    margin-left: 0px;
+                }
+            }
+    
+            .info-container {
+                width: 544px;
+                height: 196px;
+            }
+        }
+
+        .main-container {
+            width: 1440px;
+            grid-template-columns: 248px 944px 248px;
+            grid-template-rows: 82px 48px 38px 448px 129px 48px 63px 1441px 143px;
+
+        }
+
+        .footer-container {
+            width: 1440px;
+            height: 700px;
+            grid-template-columns: 248px 304px 96px 544px 248px;
+            grid-template-rows: 81px 48px 61px 457px;
+            grid-template-areas: 
+                    ". . . . ."
+                    ". title title title ."
+                    ". . . . ."
+                    ". cont-c . form .";
+        }
+    }
+}
